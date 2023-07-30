@@ -1,22 +1,27 @@
-const main = document.querySelector('main');
+var main = document.querySelector('#main');
+
 
 main.addEventListener('submit', function (e) {
     e.preventDefault();
-    const height = parseInt(document.querySelector('#height'));
-    const weight = parseInt(document.querySelector('#weight'));
-    const result = document.querySelector('#reshow');
 
-    if (height < 0 || isNaN(height) || height === '') {
+    var height = parseInt(document.querySelector('#height1').ariaValueText);
+    var weight = parseInt(document.querySelector('#weight2').ariaValueText);
+    var result = document.querySelector('#reshow');
+    
+
+    if (height === '' || height < 0 || isNaN(height)) {
         result.innerHTML = `Please enter valid Height ${height}`;
-    }
-    else if (weight < 0 || isNaN(weight) || weight === '') {
-        result.innerHTML = `Please enter valid weight ${weight}`;
-    }
-    else {
-        const bmi = (weight / (height*height) / 10000).toFixed(2);
+        console.log("bad");
+    } else if (weight === '' || weight < 0 || isNaN(weight)) {
+        result.innerHTML = `Please enter valid Weight ${weight}`;
+        console.log("bad2");
+    } else {
+        const bmi = (weight / ((height*height) / 10000).toFixed(2));
+        console.log("bad3")
 
         // to show result
 
         result.innerHTML = `<span>${bmi}</span>`;
+        console.log("bad4")
     }
 });

@@ -8,13 +8,13 @@
 </head>
 <body>
     
-    <main>
+    <main id="main">
         <div class="content">
             <label for="height">Enter your height in CM</label>
-            <input type="number" class="height" id="height" required>
+            <input type="number" class="height" id="height1" required>
             <label for="weight">Enter your weight in KG</label>
-            <input type="text" class="weight" id="weight" required>
-            <button class="submit-btn">Calculate</button>
+            <input type="text" class="weight" id="weight2" required>
+            <button type="submit" class="submit-btn">Calculate</button>
         </div>
         <div class="result">
             <div>
@@ -23,8 +23,10 @@
                 <p>Normal Range = 18.6 and 24.9</p>
                 <p>OverWeight = Greater than 24.9</p>
             </div>
-            <div id="reshow">
-                
+            <div style="background-color: blue;" id="reshow">
+                <span id="text"><p></p><h2>Text Goes Here</h2>
+
+                </span>
             </div>
         </div>
     </main>
