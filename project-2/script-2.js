@@ -1,12 +1,12 @@
-var main = document.querySelector('#main');
+const main = document.querySelector('#main');
 
 
 main.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    var height = parseInt(document.querySelector('#height1').ariaValueText);
-    var weight = parseInt(document.querySelector('#weight2').ariaValueText);
-    var result = document.querySelector('#reshow');
+    const height = parseInt(document.querySelector('#height1').ariaValueText);
+    const weight = parseInt(document.querySelector('#weight2').ariaValueText);
+    const result = document.querySelector('#reshow');
     
 
     if (height === '' || height < 0 || isNaN(height)) {
