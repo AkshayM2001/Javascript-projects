@@ -13,7 +13,7 @@ textEl.innerText = `What is ${num1} multiply by ${num2} ?`;
 // VALIDATING ANSWER
 const correctAns = num1 * num2;
 
-let score = 0;
+let score = JSON.parse(localStorage.getItem("score"));
 
 // ADDING EVENT LISTENER TO BTN AND GETTING INPUT IN NUMBER NOT STRING
 
@@ -21,10 +21,14 @@ btnEl.addEventListener("submit", () => {
     const userAns = +inputEl.Value;
     if(score === correctAns){
         score++;
-        console.log(score)
+        console.log(score);
     }
     else{
         score--;
-        console.log(score)
-    }
+        console.log(score);
+    };
 });
+
+function uodatelocalstore (){
+    localStorage.setItem("score", JSON.stringify(score));
+};
