@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    border: 3px solid black;
+    height: 250px;
+    width: 300px;
+    padding: 20px 6px;
+    border-radius: 10px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box #text{
+    margin: 10px 0;
+    height: 90px;
+    width: 260px;
+    font-size: 20px;
+}
+.box .box2{
+    display: flex;
+    justify-content: space-between;
+}
