@@ -30,13 +30,16 @@ body{
     font-size: 20px;
     text-align: center;
 }
-.box .box2{
-    display: flex;
-    
-}
-.box .box2 div{
-    display: flex;
-    justify-content: space-between;
+.box2{
+    display: grid;
     font-size: 16px;
+    grid-template-rows: max-content;
     margin: 0 30px;
+
+}
+#count{
+    color: lightblue;
+}
+#remain{
+    color: brown;
 }
