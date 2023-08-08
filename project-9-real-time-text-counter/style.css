@@ -24,12 +24,19 @@ body{
     flex-direction: column;
 }
 .box #text{
-    margin: 10px 0;
+    margin: 20px 0;
     height: 90px;
     width: 260px;
     font-size: 20px;
+    text-align: center;
 }
 .box .box2{
     display: flex;
+    
+}
+.box .box2 div{
+    display: flex;
     justify-content: space-between;
+    font-size: 16px;
+    margin: 0 30px;
 }
